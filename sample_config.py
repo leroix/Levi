@@ -21,8 +21,9 @@ CRYPTO_KEY = """{
 ## The "method" can be a builtin method (i.e. dotcloud, dotcloud0.4, heroku)
 ## or it can be a user-created script in any language. "args" is a list of 
 ## command-line arguments that will be submitted to the "method" script. 
-## For instance, the only command-line argument that dotcloud and heroku 
-## require is the app name.
+## For instance, fakesvc requires one command-line argument. So, facesvc
+## will be invoked as follows: 
+## /home/lebanonlevi/fakesvc.py fakeservice var1=something var2=somethingelse ...
 SERVICES = [
         {'args': ['rbetachinook'], 'method': 'dotcloud'},
         {'args': ['rbetatophat'], 'method': 'heroku'},
